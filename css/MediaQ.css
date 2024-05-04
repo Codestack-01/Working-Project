@@ -1,0 +1,30 @@
+@media only screen and (max-width: 400px) {
+  header.desktop-menu {
+    display: none;
+  }
+  header.mobile-menu {
+    display: flex;
+    z-index: 1000;
+  }
+  section.home {
+    flex-wrap: wrap;
+    padding: 0;
+    height: 90vh;
+  }
+  section.home .title-box {
+    width: 80vw;
+    height: 85vw;
+  }
+  section.home h3 {
+    font-size: 4vw;
+    position: relative;
+    top: 1.8vh;
+  }
+  section.home h1 {
+    font-size: 9vw;
+  }
+  section.home button {
+    width: 40vw;
+    padding: 5vw;
+  }
+}

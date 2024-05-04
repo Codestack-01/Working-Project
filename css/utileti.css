@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Lato";
+  src: url(../FontAwosome/Font/MyFont.ttf);
+}
+:root {
+  --White: #eeeeee;
+  --Gray: #31363f;
+  --Black: #222831;
+  --G: #006b63;
+  --B: #002e5b;
+  --LightLevel2: #9db2bf;
+  --SkyBlue: #76abae;
+}

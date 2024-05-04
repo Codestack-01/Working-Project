@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CA</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/MediaQ.css" />
+    <link rel="stylesheet" href="./FontAwosome/css/all.min.css" />
+    <link rel="stylesheet" href="./FontAwosome/css/fontawesome.min.css" />
+  </head>
+  <body>
+    <header class="desktop-menu">
+      <div class="logo">HarshitPars&CO</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Experents</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header class="mobile-menu">
+      <div class="logo">HarshitPars&CO</div>
+      <nav>
+        <button class="Cut-icon" onclick="CutIcons()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h1 class="MenuHadding">Harshit Gupta</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Experents</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="bar-icon" onclick="barIcon()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <section class="home">
+      <div class="img-box">
+        <img src="./Image/team-3.png" alt="" />
+      </div>
+      <div class="title-box">
+        <h3>WE PROVIDE BEST FINANCAL SOLUTIONS</h3>
+        <h1>Harshit Gupta</h1>
+        <p>
+          We have over 25 Yers's of Experience in Finance and Business
+          management so we can make your business more succesful you can turst
+          us
+        </p>
+        <button class="viwe-button">Viwe Services</button>
+      </div>
+    </section>
+  </body>
+  <script>
+    const barIcon = () => {
+      document.querySelector(".mobile-menu > nav").style.display = "flex";
+    };
+    const CutIcons = () => {
+      document.querySelector(".mobile-menu > nav").style.display = "none";
+    };
+  </script>
+</html>

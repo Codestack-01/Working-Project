@@ -1,0 +1,178 @@
+@import url(./utileti.css);
+@import url(./MediaQ.css);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  border: none;
+}
+header.desktop-menu,
+header.mobile-menu {
+  width: 100%;
+  height: 8vh;
+  background-color: var(--White);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header.desktop-menu .logo {
+  font-size: 2vw;
+  margin-left: 1vw;
+  color: var(--Black);
+  cursor: default;
+}
+header.desktop-menu nav ul li {
+  list-style: none;
+}
+header.desktop-menu nav {
+  width: 50vw;
+}
+header.desktop-menu nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3vw;
+}
+header.desktop-menu nav ul li a {
+  text-decoration: none;
+  color: var(--B);
+  font-size: 1.3vw;
+}
+header.desktop-menu nav ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1.5vh;
+}
+/*Mobile Header  CSS */
+
+header.mobile-menu {
+  display: none;
+  background-color: var(--White);
+  height: 8vh;
+  position: relative;
+  color: var(--Black);
+}
+header.mobile-menu .logo {
+  font-size: 6vw;
+  margin-left: 2vw;
+}
+.bar-icon {
+  font-size: 7vw;
+  background-color: transparent;
+  margin-right: 3vw;
+}
+.Cut-icon {
+  position: absolute;
+  top: 5vw;
+  left: 5vw;
+  font-size: 10vw;
+  background-color: transparent;
+}
+header.mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--White);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 40vh;
+  padding: 8vh 0;
+  display: none;
+}
+header.mobile-menu nav h1 {
+  font-size: 8vw;
+}
+header.mobile-menu nav ul {
+  height: 100%;
+  /* width: ; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header.mobile-menu nav ul li {
+  list-style-type: none;
+}
+header.mobile-menu nav ul li a {
+  font-size: 5vw;
+  text-decoration: none;
+  color: var(--G);
+}
+header.mobile-menu nav ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1.5vh;
+}
+section.home {
+  /* border: 2px solid black; */
+  width: 90;
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 4vw;
+}
+section.home .title-box {
+  width: 41vw;
+  height: 20vw;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+section.home h1 {
+  font-size: 3vw;
+  color: var(--G);
+}
+section.home h3 {
+  font-size: 1.2vw;
+  color: var(--B);
+}
+section.home p {
+  text-wrap: wrap;
+  text-align: justify;
+  color: var(--Black);
+}
+section.home button {
+  border: 0.2vw solid var(--B);
+  width: 10vw;
+  padding: 1vw;
+  font-weight: bold;
+  letter-spacing: 0.01vw;
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+section.home button:hover {
+  background-color: var(--B);
+  color: var(--White);
+}
+section.home button:active {
+  transform: scale(0.99);
+  -webkit-transform: scale(0.99);
+  -moz-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  -o-transform: scale(0.99);
+}
+
+section.home .img-box {
+  background-color: var(--SkyBlue);
+  border-radius: 0.2vw;
+  -webkit-border-radius: 0.2vw;
+  -moz-border-radius: 0.2vw;
+  -ms-border-radius: 0.2vw;
+  -o-border-radius: 0.2vw;
+}
+section.home .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  bottom: -0.2vw;
+}
