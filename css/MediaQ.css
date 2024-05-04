@@ -6,6 +6,7 @@
     display: flex;
     z-index: 1000;
   }
+  /* Home */
   section.home {
     flex-wrap: wrap;
     padding: 0;
@@ -17,7 +18,7 @@
   }
   section.home .title-box {
     width: 80vw;
-    height: 90vw;
+    height: 70vw;
   }
   section.home h3 {
     font-size: 4vw;
@@ -28,13 +29,14 @@
     font-size: 9vw;
   }
   section.home button {
-    width: 40vw;
-    padding: 5vw;
+    width: 34vw;
+    padding: 3vw;
     background-color: var(--B);
     color: var(--White);
-    letter-spacing: 0.2vw;
-    font-size: 4vw;
+    letter-spacing: 0.1vw;
+    font-size: 3.5vw;
   }
+  /* Services */
   section.services .title .Hadding {
     margin-top: 0vw;
     font-size: 8vw;
@@ -44,17 +46,125 @@
   }
   section.services div.Component {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     margin-top: 3vh;
   }
   section.services div.box {
-    width: 35vw;
-    height: 15vh;
+    width: 55vw;
+    height: 20vh;
+    flex-direction: column;
+    box-shadow: 1vw 1vw 2vw #414752cc, -1vw 1vw 3vw #414752cc;
   }
   section.services div.box div.icon i {
-    font-size: 5vw;
+    font-size: 10vw;
+  }
+  section.services div.box a {
+    border-top: 0.3vw solid var(--Gray);
+    width: 92%;
+    font-size: 3vw;
+    text-align: center;
+    bottom: 2vw;
+    padding-top: 2vw;
   }
   section.services div.box h2 {
+    font-size: 4.5vw;
+  }
+  /* WHy */
+  section.why {
+    width: 98vw;
+    height: 80vh;
+  }
+  section.why div.image {
+    width: 80vw;
+    height: 26vh;
+  }
+  section.why div.Box {
+    width: 80vw;
+    height: 40vh;
+  }
+  section.why div.Box h4 {
+    font-size: 5vw;
+    top: 4vw;
+  }
+  section.why div.Box h2 {
+    font-size: 7vw;
+  }
+  /* Experience */
+  section.experience {
+    height: 75vh;
+  }
+  section.experience div.box {
+    width: 100%;
+    height: 58vh;
+  }
+  section.experience h1 {
+    font-size: 7vw;
+    background-color: white;
+  }
+  section.experience div.box span {
+    width: 30vw;
+    padding: 3vw 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section.experience div.box span:nth-child(odd) {
+    right: 25vw;
+  }
+  section.experience div.box span:nth-child(even) {
+    left: 25vw;
+  }
+  section.experience div.box span:nth-child(even)::after {
+    padding: 1.3vw;
+    left: -8.5vw;
+  }
+  section.experience div.box span:nth-child(even)::before {
+    content: "";
+    top: 2vw;
+    left: -8.5vw;
+    padding: 0.2vw 13vw;
+  }
+
+  section.experience div.box span:nth-child(odd) {
+    right: 25vw;
+  }
+  section.experience div.box span:nth-child(odd)::after {
+    padding: 1.3vw;
+    right: -9.5vw;
+  }
+  section.experience div.box span:nth-child(odd)::before {
+    content: "";
+    top: 2.5vw;
+    right: -8.5vw;
+    padding: 0.2vw 13vw;
+  }
+  /* Touch */
+  section.touch div.image {
+    display: none;
+  }
+  section.touch div.Form {
+    width: 90vw;
+  }
+  section.touch div.Form form {
+    border-radius: 2vw;
+    width: 100%;
+    -webkit-border-radius: 2vw;
+    -moz-border-radius: 2vw;
+    -ms-border-radius: 2vw;
+    -o-border-radius: 2vw;
+  }
+  section.touch div.Form input,
+  section.touch div.Form textarea {
+    width: 80vw;
     font-size: 3.5vw;
+    padding-left: 3vw;
+  }
+
+  section.touch div.Form input::placeholder,
+  section.touch div.Form textarea ::placeholder {
+    font-size: 3.5vw;
+  }
+  section.touch div.Form button.SubmitBtb {
+    padding: 3vw 4vw;
   }
 }

@@ -5,6 +5,16 @@
   font-family: "Lato", sans-serif;
   border: none;
 }
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: var(--White);
+}
+/* section {
+  border-top: 1px solid var(--Gray);
+} */
 header.desktop-menu,
 header.mobile-menu {
   width: 100%;
@@ -64,7 +74,7 @@ header.mobile-menu .logo {
   position: absolute;
   top: 5vw;
   left: 5vw;
-  font-size: 10vw;
+  font-size: 8vw;
   background-color: transparent;
 }
 header.mobile-menu nav {
@@ -82,7 +92,7 @@ header.mobile-menu nav {
   display: none;
 }
 header.mobile-menu nav h1 {
-  font-size: 8vw;
+  font-size: 6vw;
 }
 header.mobile-menu nav ul {
   height: 100%;
@@ -96,7 +106,7 @@ header.mobile-menu nav ul li {
   list-style-type: none;
 }
 header.mobile-menu nav ul li a {
-  font-size: 5vw;
+  font-size: 4vw;
   text-decoration: none;
   color: var(--G);
 }
@@ -185,7 +195,6 @@ section.services {
   align-items: center;
   /* border: 2px solid black; */
   padding: 1vw 2vw;
-  margin-bottom: 2vw;
 }
 section.services .title {
   width: 100%;
@@ -226,7 +235,7 @@ section.services div.box {
   padding: 0 1.5vw;
   outline: 0.1vw solid var(--Gray);
   border-radius: 0.5vw;
-  box-shadow: 0.1vw 0.1vw 1vw var(--Gray), -0.1vw -0.1vw 1vw var(--Gray);
+  box-shadow: 0.1vw 0.1vw 1vw #414752cc, -0.1vw -0.1vw 1vw var(--Gray);
   -webkit-border-radius: 0.5vw;
   -moz-border-radius: 0.5vw;
   -ms-border-radius: 0.5vw;
@@ -234,7 +243,7 @@ section.services div.box {
 }
 section.services div.box div.icon i {
   font-size: 2.5vw;
-  color: var(--B);
+  color: var(--Gray);
 }
 section.services div.box h2 {
   color: var(--G);
@@ -246,8 +255,222 @@ section.services div.box a {
   left: 2vw;
   text-decoration: none;
   color: var(--B);
+  font-size: 1.2vw;
 }
 section.services div.box a i {
   position: relative;
   top: 0.2vh;
+}
+/*===========>>>> Why css<============ */
+section.why {
+  width: 98vw;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 2vw;
+  position: relative;
+}
+section.why div.image {
+  width: 35vw;
+  height: 40vh;
+  background-color: var(--G);
+  position: relative;
+  top: 1vw;
+}
+section.why div.image img {
+  width: 100%;
+}
+section.why div.Box {
+  width: 40vw;
+  height: 30vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+section.why div.Box h4 {
+  font-size: 2vw;
+  color: var(--B);
+  position: relative;
+  top: 0.5vw;
+}
+section.why div.Box h2 {
+  font-size: 3vw;
+  color: var(--G);
+}
+section.why div.Box p {
+  text-align: justify;
+  line-height: 3vh;
+}
+section.why div.Box b {
+  line-height: 5vh;
+  cursor: pointer;
+}
+/* Eepericence */
+section.experience {
+  width: 98vw;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 2vw;
+}
+section.experience h1 {
+  font-size: 2.5vw;
+  text-decoration: underline;
+  text-underline-offset: 2.5vw;
+}
+section.experience div.box {
+  width: 100%;
+  height: 90%;
+  display: grid;
+  /* grid-template-columns: auto auto; */
+  place-content: center;
+  gap: 2vw;
+  position: relative;
+}
+section.experience div.box span:nth-child(even) {
+  left: 12vw;
+}
+section.experience div.box span:nth-child(odd) {
+  right: 11vw;
+}
+section.experience div.box span:nth-child(even)::after {
+  content: "";
+  border-radius: 50%;
+  padding: 0.5vw;
+  background-color: var(--Black);
+  position: absolute;
+  top: 1.1vw;
+  left: -2.5vw;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+section.experience div.box span:nth-child(even)::before {
+  content: "";
+  padding: 0.2vw 5vw;
+  background-color: var(--Black);
+  position: absolute;
+  top: 1.4vw;
+  left: -2vw;
+  z-index: -1;
+}
+section.experience div.box span:nth-child(odd)::after {
+  content: "";
+  border-radius: 50%;
+  padding: 0.5vw;
+  background-color: var(--Black);
+  position: absolute;
+  top: 1.1vw;
+  right: -2.5vw;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+section.experience div.box span:nth-child(odd)::before {
+  content: "";
+  padding: 0.2vw 5vw;
+  background-color: var(--Black);
+  position: absolute;
+  top: 1.4vw;
+  right: -2vw;
+  z-index: -1;
+}
+section.experience div.box span {
+  width: 15vw;
+  position: relative;
+  display: inline-block;
+  background-color: var(--SkyBlue);
+  padding: 1vw 2vw;
+}
+section.experience .line {
+  position: absolute;
+  height: 62vh;
+  width: 0.5vw;
+  background-color: var(--Gray);
+  z-index: -5;
+  left: 49.2vw;
+}
+/* Touch */
+section.touch {
+  width: 100vw;
+  height: 80vh;
+  /* border: 2px solid; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section.touch div.Form form {
+  border-radius: 2vw;
+  width: 45vw;
+  height: 60vh;
+  padding: 2vw;
+  /* background-color: var(--SkyBlue); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  -webkit-border-radius: 2vw;
+  -moz-border-radius: 2vw;
+  -ms-border-radius: 2vw;
+  -o-border-radius: 2vw;
+}
+section.touch div.Form h4 {
+  position: relative;
+  bottom: 0.5vw;
+  margin-bottom: 0.2vw;
+  font-size: 0.8rem;
+}
+textarea,
+input {
+  outline: 0.15vw solid;
+  background-color: var();
+}
+section.touch div.Form textarea {
+  width: 30vw;
+  height: 15vh;
+  padding: 0.5vw;
+  padding-left: 1vw;
+  padding-top: 1.5vw;
+  font-size: 1.4vw;
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+}
+section.touch div.Form input {
+  width: 30vw;
+  height: 4vh;
+  padding: 0.5vw;
+  padding-left: 1vw;
+  font-size: 1.3vw;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+}
+section.touch div.image {
+  width: 32vw;
+  height: 55vh;
+}
+section.touch div.image img {
+  width: 100%;
+  height: 100%;
+}
+section.touch div.Form button.SubmitBtb {
+  padding: 1vw 2vw;
+  background-color: var(--B);
+  color: var(--White);
+  cursor: pointer;
 }
