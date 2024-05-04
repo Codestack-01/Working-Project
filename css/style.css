@@ -136,6 +136,7 @@ section.home p {
   color: var(--Black);
 }
 section.home button {
+  background-color: transparent;
   border: 0.2vw solid var(--B);
   width: 10vw;
   padding: 1vw;
