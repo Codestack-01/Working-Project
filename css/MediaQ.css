@@ -11,9 +11,13 @@
     padding: 0;
     height: 90vh;
   }
+  section.home .img-box {
+    width: 80vw;
+    height: 45vh;
+  }
   section.home .title-box {
     width: 80vw;
-    height: 85vw;
+    height: 90vw;
   }
   section.home h3 {
     font-size: 4vw;
@@ -26,5 +30,31 @@
   section.home button {
     width: 40vw;
     padding: 5vw;
+    background-color: var(--B);
+    color: var(--White);
+    letter-spacing: 0.2vw;
+    font-size: 4vw;
+  }
+  section.services .title .Hadding {
+    margin-top: 0vw;
+    font-size: 8vw;
+  }
+  section.services .title p {
+    font-size: 3vw;
+  }
+  section.services div.Component {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 3vh;
+  }
+  section.services div.box {
+    width: 35vw;
+    height: 15vh;
+  }
+  section.services div.box div.icon i {
+    font-size: 5vw;
+  }
+  section.services div.box h2 {
+    font-size: 3.5vw;
   }
 }
