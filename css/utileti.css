@@ -3,11 +3,15 @@
   src: url(../FontAwosome/Font/MyFont.ttf);
 }
 :root {
-  --White: #eeeeee;
-  --Gray: #31363f;
-  --Black: #222831;
-  --G: #006b63;
-  --B: #002e5b;
-  --LightLevel2: #9db2bf;
-  --SkyBlue: #76abae;
+  --hue-color: 250;
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --container-color: #fff;
 }

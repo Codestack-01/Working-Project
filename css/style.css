@@ -10,11 +10,8 @@ html {
 }
 
 body {
-  background-color: var(--White);
+  background-color: var(--body-colo);
 }
-/* section {
-  border-top: 1px solid var(--Gray);
-} */
 header.desktop-menu,
 header.mobile-menu {
   width: 100%;
@@ -27,7 +24,7 @@ header.mobile-menu {
 header.desktop-menu .logo {
   font-size: 2vw;
   margin-left: 1vw;
-  color: var(--Black);
+  color: var(--title-color);
   cursor: default;
 }
 header.desktop-menu nav ul li {
@@ -45,11 +42,17 @@ header.desktop-menu nav ul {
 }
 header.desktop-menu nav ul li a {
   text-decoration: none;
-  color: var(--B);
+  color: var(--title-color);
   font-size: 1.3vw;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 header.desktop-menu nav ul li a:hover {
   text-decoration: underline;
+  color: var(--first-color);
   text-underline-offset: 1.5vh;
 }
 /*Mobile Header  CSS */
@@ -64,11 +67,13 @@ header.mobile-menu {
 header.mobile-menu .logo {
   font-size: 6vw;
   margin-left: 2vw;
+  color: var(--title-color);
 }
 .bar-icon {
   font-size: 7vw;
   background-color: transparent;
   margin-right: 3vw;
+  color: var(--title-color);
 }
 .Cut-icon {
   position: absolute;
@@ -96,7 +101,6 @@ header.mobile-menu nav h1 {
 }
 header.mobile-menu nav ul {
   height: 100%;
-  /* width: ; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -108,12 +112,14 @@ header.mobile-menu nav ul li {
 header.mobile-menu nav ul li a {
   font-size: 4vw;
   text-decoration: none;
-  color: var(--G);
+  color: var(--title-color);
 }
 header.mobile-menu nav ul li a:hover {
   text-decoration: underline;
+  color: var(--first-color);
   text-underline-offset: 1.5vh;
 }
+/* Home */
 section.home {
   width: 90;
   height: 70vh;
@@ -125,7 +131,7 @@ section.home {
 }
 section.home .title-box {
   width: 41vw;
-  height: 20vw;
+  height: 25vw;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -133,33 +139,39 @@ section.home .title-box {
 }
 section.home h1 {
   font-size: 3vw;
-  color: var(--G);
+  color: var(--title-color);
 }
 section.home h3 {
   font-size: 1.2vw;
-  color: var(--B);
+  color: var(--text-color);
 }
 section.home p {
   text-wrap: wrap;
   text-align: justify;
-  color: var(--Black);
+  color: var(--text-color);
 }
 section.home button {
-  border: 0.2vw solid var(--B);
-  width: 10vw;
-  padding: 1vw;
-  font-weight: bold;
+  background-color: var(--first-color);
+  color: #fff;
+  width: 12vw;
+  height: 8vh;
+  font-size: 1.3vw;
+  /* font-weight: bold; */
   letter-spacing: 0.01vw;
   cursor: pointer;
+  border-radius: 0.5vw;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
 }
 section.home button:hover {
-  background-color: var(--B);
-  color: var(--White);
+  background-color: var(--first-color-alt);
 }
 section.home button:active {
   transform: scale(0.99);
@@ -172,7 +184,7 @@ section.home button:active {
 section.home .img-box {
   width: 30vw;
   height: 54vh;
-  background-color: var(--SkyBlue);
+  background-color: var(--first-color-lighter);
   padding-top: 1vw;
   border-radius: 0.2vw;
   -webkit-border-radius: 0.2vw;
@@ -208,11 +220,12 @@ section.services .title {
 section.services .title .Hadding {
   margin-top: 0.5vw;
   font-size: 3vw;
+  color: var(--title-color);
 }
 section.services .title p {
   text-align: center;
   font-size: 1.5vw;
-  color: var(--Gray);
+  color: var(--text-color);
 }
 section.services div.Component {
   display: flex;
@@ -225,7 +238,7 @@ section.services div.Component {
 section.services div.box {
   cursor: default;
   position: relative;
-  background-color: var(--White);
+  background-color: var(--container-color);
   width: 20vw;
   height: 25vh;
   display: flex;
@@ -235,7 +248,7 @@ section.services div.box {
   padding: 0 1.5vw;
   outline: 0.1vw solid var(--Gray);
   border-radius: 0.5vw;
-  box-shadow: 0.1vw 0.1vw 1vw #414752cc, -0.1vw -0.1vw 1vw var(--Gray);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), 0 -2px 4px rgba(0, 0, 0, 0.15);
   -webkit-border-radius: 0.5vw;
   -moz-border-radius: 0.5vw;
   -ms-border-radius: 0.5vw;
@@ -243,10 +256,10 @@ section.services div.box {
 }
 section.services div.box div.icon i {
   font-size: 2.5vw;
-  color: var(--Gray);
+  color: var(--first-color);
 }
 section.services div.box h2 {
-  color: var(--G);
+  color: var(--title-color);
   font-size: 1.8vw;
 }
 section.services div.box a {
@@ -254,7 +267,7 @@ section.services div.box a {
   bottom: 2vh;
   left: 2vw;
   text-decoration: none;
-  color: var(--B);
+  color: var(--first-color);
   font-size: 1.2vw;
 }
 section.services div.box a i {
@@ -275,7 +288,6 @@ section.why {
 section.why div.image {
   width: 35vw;
   height: 40vh;
-  background-color: var(--G);
   position: relative;
   top: 1vw;
 }
@@ -293,17 +305,18 @@ section.why div.Box {
 }
 section.why div.Box h4 {
   font-size: 2vw;
-  color: var(--B);
+  color: var(--text-color);
   position: relative;
   top: 0.5vw;
 }
 section.why div.Box h2 {
   font-size: 3vw;
-  color: var(--G);
+  color: var(--title-color);
 }
 section.why div.Box p {
   text-align: justify;
   line-height: 3vh;
+  color: var(--text-color);
 }
 section.why div.Box b {
   line-height: 5vh;
@@ -323,6 +336,7 @@ section.experience h1 {
   font-size: 2.5vw;
   text-decoration: underline;
   text-underline-offset: 2.5vw;
+  color: var(--title-color);
 }
 section.experience div.box {
   width: 100%;
@@ -333,6 +347,14 @@ section.experience div.box {
   gap: 2vw;
   position: relative;
 }
+section.experience div.box span {
+  width: 15vw;
+  position: relative;
+  display: inline-block;
+  color: var(--text-color);
+  /* background-color: var(--SkyBlue); */
+  padding: 1vw 2vw;
+}
 section.experience div.box span:nth-child(even) {
   left: 12vw;
 }
@@ -342,67 +364,41 @@ section.experience div.box span:nth-child(odd) {
 section.experience div.box span:nth-child(even)::after {
   content: "";
   border-radius: 50%;
+  background-color: var(--first-color);
   padding: 0.5vw;
-  background-color: var(--Black);
   position: absolute;
   top: 1.1vw;
-  left: -2.5vw;
+  left: -2.7vw;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-}
-section.experience div.box span:nth-child(even)::before {
-  content: "";
-  padding: 0.2vw 5vw;
-  background-color: var(--Black);
-  position: absolute;
-  top: 1.4vw;
-  left: -2vw;
-  z-index: -1;
 }
 section.experience div.box span:nth-child(odd)::after {
   content: "";
   border-radius: 50%;
   padding: 0.5vw;
-  background-color: var(--Black);
+  background-color: var(--first-color);
   position: absolute;
-  top: 1.1vw;
-  right: -2.5vw;
+  top: 1.3vw;
+  right: -2.3vw;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-section.experience div.box span:nth-child(odd)::before {
-  content: "";
-  padding: 0.2vw 5vw;
-  background-color: var(--Black);
-  position: absolute;
-  top: 1.4vw;
-  right: -2vw;
-  z-index: -1;
-}
-section.experience div.box span {
-  width: 15vw;
-  position: relative;
-  display: inline-block;
-  background-color: var(--SkyBlue);
-  padding: 1vw 2vw;
-}
 section.experience .line {
   position: absolute;
   height: 62vh;
-  width: 0.5vw;
-  background-color: var(--Gray);
+  width: 0.2vw;
+  background-color: var(--first-color);
   z-index: -5;
   left: 49.2vw;
 }
 /* Touch */
 section.touch {
-  width: 100vw;
+  width: 98vw;
   height: 80vh;
-  /* border: 2px solid; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -410,7 +406,7 @@ section.touch {
 section.touch div.Form form {
   border-radius: 2vw;
   width: 45vw;
-  height: 60vh;
+  height: 65vh;
   padding: 2vw;
   /* background-color: var(--SkyBlue); */
   display: flex;
@@ -422,16 +418,20 @@ section.touch div.Form form {
   -ms-border-radius: 2vw;
   -o-border-radius: 2vw;
 }
+section.touch div.Form h1 {
+  color: var(--title-color);
+}
 section.touch div.Form h4 {
   position: relative;
   bottom: 0.5vw;
   margin-bottom: 0.2vw;
   font-size: 0.8rem;
+  color: var(--text-color);
 }
 textarea,
 input {
-  outline: 0.15vw solid;
-  background-color: var();
+  outline: 0.15vw solid var(--title-color);
+  color: var(--text-color);
 }
 section.touch div.Form textarea {
   width: 30vw;
@@ -469,8 +469,16 @@ section.touch div.image img {
   height: 100%;
 }
 section.touch div.Form button.SubmitBtb {
-  padding: 1vw 2vw;
-  background-color: var(--B);
-  color: var(--White);
+  padding: 1.5vw 3vw;
+  border-radius: 0.7vw;
+  background-color: var(--first-color);
+  color: #fff;
   cursor: pointer;
+  -webkit-border-radius: 0.7vw;
+  -moz-border-radius: 0.7vw;
+  -ms-border-radius: 0.7vw;
+  -o-border-radius: 0.7vw;
+}
+section.touch div.Form button.SubmitBtb:hover {
+  background-color: var(--first-color-alt);
 }

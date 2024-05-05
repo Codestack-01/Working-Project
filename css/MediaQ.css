@@ -18,7 +18,7 @@
   }
   section.home .title-box {
     width: 80vw;
-    height: 70vw;
+    height: 85vw;
   }
   section.home h3 {
     font-size: 4vw;
@@ -29,12 +29,10 @@
     font-size: 9vw;
   }
   section.home button {
-    width: 34vw;
-    padding: 3vw;
-    background-color: var(--B);
-    color: var(--White);
+    width: 40vw;
+    padding: 2vw;
     letter-spacing: 0.1vw;
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
   /* Services */
   section.services .title .Hadding {
@@ -61,7 +59,7 @@
   section.services div.box a {
     border-top: 0.3vw solid var(--Gray);
     width: 92%;
-    font-size: 3vw;
+    font-size: 3.3vw;
     text-align: center;
     bottom: 2vw;
     padding-top: 2vw;
@@ -93,6 +91,9 @@
   section.experience {
     height: 75vh;
   }
+  section.experience .line {
+    height: 59vh;
+  }
   section.experience div.box {
     width: 100%;
     height: 58vh;
@@ -102,43 +103,38 @@
     background-color: white;
   }
   section.experience div.box span {
-    width: 30vw;
+    width: 71vw;
     padding: 3vw 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   section.experience div.box span:nth-child(odd) {
-    right: 25vw;
+    right: 39vw;
   }
   section.experience div.box span:nth-child(even) {
     left: 25vw;
   }
   section.experience div.box span:nth-child(even)::after {
     padding: 1.3vw;
-    left: -8.5vw;
+    left: 11.5vw;
+    top: 4.3vw;
   }
-  section.experience div.box span:nth-child(even)::before {
-    content: "";
-    top: 2vw;
-    left: -8.5vw;
-    padding: 0.2vw 13vw;
-  }
-
   section.experience div.box span:nth-child(odd) {
     right: 25vw;
   }
   section.experience div.box span:nth-child(odd)::after {
     padding: 1.3vw;
-    right: -9.5vw;
+    right: 10.8vw;
+    top: 4.3vw;
   }
-  section.experience div.box span:nth-child(odd)::before {
-    content: "";
-    top: 2.5vw;
-    right: -8.5vw;
-    padding: 0.2vw 13vw;
+  section.experience div.box {
+    gap: 6vw;
   }
   /* Touch */
+  section.touch {
+    height: 70vh;
+  }
   section.touch div.image {
     display: none;
   }
