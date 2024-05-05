@@ -59,7 +59,7 @@ header.desktop-menu nav ul li a:hover {
 
 header.mobile-menu {
   display: none;
-  background-color: var(--White);
+  background-color: #fff;
   height: 8vh;
   position: relative;
   color: var(--Black);
@@ -83,11 +83,11 @@ header.mobile-menu .logo {
   background-color: transparent;
 }
 header.mobile-menu nav {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--White);
   position: absolute;
   top: 0;
   right: 0;
@@ -98,6 +98,7 @@ header.mobile-menu nav {
 }
 header.mobile-menu nav h1 {
   font-size: 6vw;
+  color: var(--title-color);
 }
 header.mobile-menu nav ul {
   height: 100%;
@@ -112,7 +113,7 @@ header.mobile-menu nav ul li {
 header.mobile-menu nav ul li a {
   font-size: 4vw;
   text-decoration: none;
-  color: var(--title-color);
+  color: var(--text-color);
 }
 header.mobile-menu nav ul li a:hover {
   text-decoration: underline;
@@ -432,6 +433,7 @@ textarea,
 input {
   outline: 0.15vw solid var(--title-color);
   color: var(--text-color);
+  background-color: var(--input-color);
 }
 section.touch div.Form textarea {
   width: 30vw;

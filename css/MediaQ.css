@@ -6,6 +6,13 @@
     display: flex;
     z-index: 1000;
   }
+  button {
+    border-radius: 2vw !important;
+    -webkit-border-radius: 2vw !important;
+    -moz-border-radius: 2vw !important;
+    -ms-border-radius: 2vw !important;
+    -o-border-radius: 2vw !important;
+}
   /* Home */
   section.home {
     flex-wrap: wrap;
