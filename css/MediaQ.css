@@ -51,7 +51,8 @@
     width: 55vw;
     height: 20vh;
     flex-direction: column;
-    box-shadow: 1vw 1vw 2vw #414752cc, -1vw 1vw 3vw #414752cc;
+    box-shadow: 0 0.5vw 0.8vw rgba(0, 0, 0, 0.15),
+      -0.5vw 0 0.8vw rgba(0, 0, 0, 0.15);
   }
   section.services div.box div.icon i {
     font-size: 10vw;
@@ -162,5 +163,38 @@
   }
   section.touch div.Form button.SubmitBtb {
     padding: 3vw 4vw;
+  }
+  /* Footer */
+  footer {
+    height: 35vh;
+  }
+  footer article.top-box {
+    width: 100vw;
+    height: 30vh;
+    justify-content: flex-start;
+  }
+  footer article.top-box ul {
+    width: 40vw;
+  }
+  footer article.top-box ul li a {
+    font-size: 4vw;
+  }
+  footer article.top-box ul li.Hadding {
+    font-size: 5vw;
+  }
+  footer article.top-box div.contect-info {
+    width: 38vw;
+    bottom: 3.7vw;
+  }
+  footer article.top-box div.contect-info p {
+    width: 100%;
+  }
+  footer article.top-box div.map {
+    display: none;
+  }
+  footer article.botton-box {
+    width: 100vw;
+    padding: 1vw 5vw;
+    font-size: 3vw;
   }
 }

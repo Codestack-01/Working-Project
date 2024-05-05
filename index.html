@@ -14,10 +14,11 @@
       <div class="logo">HARSHITPURWAR&CO.</div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Experents</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#why">About</a></li>
+          <li><a href="#experience">Experents</a></li>
+          <li><a href="#touch">Contact Us</a></li>
         </ul>
       </nav>
     </header>
@@ -29,17 +30,18 @@
         </button>
         <h1 class="MenuHadding">Harshit Gupta</h1>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Experents</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#why">About</a></li>
+          <li><a href="#experience">Experents</a></li>
+          <li><a href="#touch">Contact Us</a></li>
         </ul>
       </nav>
       <button class="bar-icon" onclick="barIcon()">
         <i class="fa-solid fa-bars"></i>
       </button>
     </header>
-    <section class="home">
+    <section class="home" id="home">
       <div class="img-box">
         <img src="./Image/team-3.png" alt="" />
       </div>
@@ -54,7 +56,7 @@
         <button class="viwe-button">Viwe Services</button>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="title">
         <h1 class="Hadding">Our Services</h1>
         <p>
@@ -111,7 +113,7 @@
         </div>
       </div>
     </section>
-    <section class="why">
+    <section class="why" id="why">
       <div class="image">
         <img src="./Image/sliderbx.jpg" alt="" />
       </div>
@@ -127,7 +129,7 @@
         </p>
       </div>
     </section>
-    <section class="experience">
+    <section class="experience" id="experience">
       <h1>Perspective & Experience</h1>
       <span class="line"></span>
       <div class="box">
@@ -140,7 +142,7 @@
         <span>Project Financing</span>
       </div>
     </section>
-    <section class="touch">
+    <section class="touch" id="touch">
       <div class="Form">
         <form action="" onsubmit="alert('submit')">
           <h1 class="FormHadding">Get in Touch</h1>
@@ -163,6 +165,44 @@
         <img src="./Image/enquery.jpg" alt="" />
       </div>
     </section>
+    <footer>
+      <article class="top-box">
+        <ul>
+          <li class="Hadding">UseFul Links</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#why">About</a></li>
+          <li><a href="#experience">Experents</a></li>
+          <li><a href="#touch">Contact Us</a></li>
+        </ul>
+        <div class="contect-info">
+          <h1>Contect</h1>
+          <div class="Address">
+            <p>
+              <i class="fa-solid fa-location"></i>
+              <span>Mo. Hidayat Nager Lakhimpur-kheri</span>
+            </p>
+          </div>
+          <div class="number">
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              <span><a href="tel:07985906793">7985906793</a></span>
+            </p>
+          </div>
+          <div class="Email">
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              <span>harshitpurwar@gmail.com</span>
+            </p>
+          </div>
+        </div>
+        <div class="map"></div>
+      </article>
+      <article class="botton-box">
+        <div class="left">©2024 Chartered Accountant. All right Reserved</div>
+        <div class="right">Desing By Arshnoor Kirmani</div>
+      </article>
+    </footer>
   </body>
   <script>
     const barIcon = () => {

@@ -3,7 +3,7 @@
   src: url(../FontAwosome/Font/MyFont.ttf);
 }
 :root {
-  --hue-color: 250;
+  --hue-color: 15;
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);

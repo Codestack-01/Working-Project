@@ -205,7 +205,6 @@ section.services {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* border: 2px solid black; */
   padding: 1vw 2vw;
 }
 section.services .title {
@@ -248,7 +247,8 @@ section.services div.box {
   padding: 0 1.5vw;
   outline: 0.1vw solid var(--Gray);
   border-radius: 0.5vw;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), 0 -2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.2vw 0.4vw rgba(0, 0, 0, 0.15),
+    0 -0.2vw 0.4vw rgba(0, 0, 0, 0.15);
   -webkit-border-radius: 0.5vw;
   -moz-border-radius: 0.5vw;
   -ms-border-radius: 0.5vw;
@@ -256,7 +256,7 @@ section.services div.box {
 }
 section.services div.box div.icon i {
   font-size: 2.5vw;
-  color: var(--first-color);
+  color: var(--first-color-alt);
 }
 section.services div.box h2 {
   color: var(--title-color);
@@ -267,7 +267,7 @@ section.services div.box a {
   bottom: 2vh;
   left: 2vw;
   text-decoration: none;
-  color: var(--first-color);
+  color: var(--first-color-alt);
   font-size: 1.2vw;
 }
 section.services div.box a i {
@@ -481,4 +481,68 @@ section.touch div.Form button.SubmitBtb {
 }
 section.touch div.Form button.SubmitBtb:hover {
   background-color: var(--first-color-alt);
+}
+/* Footer */
+footer {
+  width: 98.55vw;
+  height: 25vw;
+  display: flex;
+  flex-direction: column;
+}
+footer article.top-box {
+  height: 44vh;
+  background-color: var(--first-color-lighter);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer article.top-box ul li {
+  list-style-type: none;
+  padding: 1vw 2vw;
+  text-align: center;
+}
+footer article.top-box ul li a {
+  text-decoration: none;
+  font-size: 1.3vw;
+  color: var(--text-color);
+}
+footer article.top-box ul li.Hadding {
+  font-size: 1.7vw;
+  color: var(--title-color);
+}
+footer article.top-box div.contect-info {
+  position: relative;
+  bottom: 1.8vw;
+  display: grid;
+  gap: 2vw;
+  color: var(--text-color);
+  cursor: default;
+}
+footer article.top-box div.contect-info h1 {
+  font-weight: 400;
+  color: var(--title-color);
+}
+footer article.top-box div.contect-info p {
+  display: flex;
+  gap: 2vw;
+}
+footer article.top-box div.contect-info p a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+footer article.top-box div.map {
+  width: 24vw;
+  height: 30vh;
+  background-color: var(--text-color);
+}
+footer article.botton-box {
+  background-color: hsl(var(--hue-color), 55%, 75%);
+  width: 94 0.55vw;
+
+  height: 6vh;
+  padding: 0.2vw 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--title-color);
 }
