@@ -1,7 +1,17 @@
 @font-face {
-  font-family: "Lato";
+  font-family: "Lato1";
   src: url(../FontAwosome/Font/MyFont.ttf);
 }
+@font-face {
+  font-family: "Lato2";
+  src: url(../FontAwosome/Font/MyFont2.ttf);
+}
+@font-face {
+  font-family: "Lato3";
+  src: url(../FontAwosome/Font/MyFont3.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nunito:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --hue-color: 15;
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -14,4 +24,7 @@
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
+  --title-size: 3vw;
+  --text-size: 1.4vw;
+  --pra-size: 1.2vw;
 }
