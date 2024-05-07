@@ -1,4 +1,4 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   :root {
     --title-size: 9vw;
     --text-size: 4vw;
@@ -441,7 +441,7 @@
   footer article.top-box div.contect-info span {
     font-size: var(--text-size);
   }
-  footer article.top-box div.map {
+  footer article.top-box .map {
     display: none;
   }
   footer article.botton-box {
