@@ -2,16 +2,6 @@
   font-family: "Lato1";
   src: url(../FontAwosome/Font/MyFont.ttf);
 }
-@font-face {
-  font-family: "Lato2";
-  src: url(../FontAwosome/Font/MyFont2.ttf);
-}
-@font-face {
-  font-family: "Lato3";
-  src: url(../FontAwosome/Font/MyFont3.ttf);
-}
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nunito:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
-
 :root {
   --hue-color: 15;
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -40,6 +30,11 @@
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
 }
-.StickyHeader * {
-  /* color: var(--container-color) !important; */
-}
+/* .ServiceAbout {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: white;
+  z-index: 9999;
+} */

@@ -27,6 +27,9 @@
   .Cut-icon {
     font-size: 6vw;
   }
+  header.mobile-menu nav {
+    height: 50vh;
+  }
   header.mobile-menu nav h1 {
     font-size: 5vw;
   }
@@ -35,6 +38,7 @@
   }
   /* home */
   section.home {
+    width: 100vw;
     height: 80vh;
   }
   section.home .img-box {
@@ -61,6 +65,7 @@
   }
   /* Services */
   section.services {
+    width: 100vw;
     flex-wrap: wrap;
   }
   section.services .title .Hadding {
@@ -93,7 +98,7 @@
   }
   /* WHy */
   section.why {
-    width: 98vw;
+    width: 100vw;
     height: 85vh;
   }
   section.why div.image {
@@ -104,6 +109,7 @@
   }
   section.why div.Box {
     width: 80vw;
+    height: 35vh;
   }
   section.why div.Box h4 {
     font-size: 3.5vw;
@@ -114,9 +120,17 @@
   section.why div.Box p {
     font-size: 3vw;
   }
+  section.why div.Box a {
+    background-color: var(--first-color);
+    color: #fff;
+    width: 30vw;
+    height: 7vh;
+    font-size: var(--text-size);
+  }
   /* Expericence */
   section.experience {
     height: 59vh;
+    width: 100vw;
   }
   section.experience h1 {
     font-size: 5.5vw;
@@ -126,9 +140,9 @@
     height: 61vh;
   }
   section.experience .line {
-    height: 32vh;
+    height: 31vh;
     width: 0.4vw;
-    top: 30vw;
+    top: 31vw;
   }
   section.experience div.box span {
     width: 45vw;
@@ -139,18 +153,19 @@
   }
   section.experience div.box span:nth-child(odd)::after {
     padding: 1vw;
-    right: 2.1vw;
+    right: 1vw;
   }
   section.experience div.box span:nth-child(even) {
     left: 30vw;
   }
-  section.experience div.box span:nth-child(even)::after {
+  section.experience div.box span:nth-child(even)::before {
     padding: 1vw;
-    left: -6.1vw;
+    left: -9vw;
   }
   /* Touch */
   section.touch {
     flex-wrap: wrap-reverse;
+    width: 100vw;
     height: 140vh;
   }
   section.touch div.contact_box {
@@ -158,11 +173,16 @@
     flex-direction: column;
   }
   section.touch div.contact_box {
-    width: 50vw;
+    width: 100%;
     height: 55vh;
   }
   section.touch div.Form form {
     width: 85vw;
+    height: 80vh;
+  }
+  section.touch div.Form button.SubmitBtb {
+    padding: 3.5vw 5vw;
+    font-size: var(--text-size);
   }
   section.touch div.contact_box .contact_container {
     gap: 4vw;
@@ -186,7 +206,7 @@
 
   section.touch div.Form input::placeholder,
   section.touch div.Form textarea::placeholder {
-    font-size: var(--pra-size);
+    font-size: var(--text-size);
     color: var(--text-color);
   }
 }
@@ -305,13 +325,17 @@
   section.why div.Box p {
     font-size: var(--pra-size);
   }
+  section.why div.Box a {
+    width: 25vw;
+    height: 5vh;
+  }
   /* Experience */
   section.experience {
     height: 75vh;
   }
   section.experience .line {
     height: 45vh;
-    top: 22vh;
+    top: 20vh;
   }
   section.experience div.box {
     width: 100%;
@@ -335,9 +359,9 @@
   section.experience div.box span:nth-child(even) {
     left: 25vw;
   }
-  section.experience div.box span:nth-child(even)::after {
+  section.experience div.box span:nth-child(even)::before {
     padding: 1.3vw;
-    left: 11.5vw;
+    left: 8.5vw;
     top: 4.3vw;
   }
   section.experience div.box span:nth-child(odd) {
@@ -345,7 +369,7 @@
   }
   section.experience div.box span:nth-child(odd)::after {
     padding: 1.3vw;
-    right: 10.8vw;
+    right: 9.8vw;
     top: 4.3vw;
   }
   section.experience div.box {
@@ -429,7 +453,7 @@
   footer article.top-box div.contect-info {
     width: 38vw;
     height: 17vh;
-    left: -4vw;
+    left: -6vw;
     /* bottom: 3.7vw; */
   }
   footer article.top-box div.contect-info h1 {
@@ -441,13 +465,13 @@
   footer article.top-box div.contect-info span {
     font-size: var(--text-size);
   }
-  footer article.top-box .map {
+  footer article.top-box iframe.map {
     display: none;
   }
   footer article.botton-box {
     width: 100vw;
     padding: 1vw 5vw;
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 }
 @media only screen and (max-height: 600px) {
