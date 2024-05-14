@@ -10,18 +10,16 @@
     top: 10.5vw;
   }
 }
-@media (max-width: 3000px) {
+/* @media (max-width: 3000px) {
   section.experience .line {
-    height: 61vh;
-    top: 18vh;
   }
   section.experience div.box span:nth-child(even)::before {
-    left: -2.75vw;
+   
   }
   section.experience div.box span:nth-child(odd)::after {
     right: -1.25vw;
   }
-}
+} */
 @media only screen and (max-width: 900px) {
   :root {
     --title-size: 9vw;

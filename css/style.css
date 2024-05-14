@@ -369,7 +369,7 @@ section.experience div.box span:nth-child(even)::before {
   padding: 0.5vw;
   position: absolute;
   top: 1.3vw;
-  left: -2.4vw;
+  left: -2.75vw;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -382,7 +382,7 @@ section.experience div.box span:nth-child(odd)::after {
   background-color: var(--first-color);
   position: absolute;
   top: 1.3vw;
-  right: -1.6vw;
+  right: -1.25vw;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -394,8 +394,8 @@ section.experience .line {
   width: 0.2vw;
   background-color: var(--first-color);
   z-index: -5;
-  left: 49.2vw;
-  top: 12.8vw;
+  left: 48.9vw;
+  top: 20vh;
 }
 /* Touch */
 section.touch {
