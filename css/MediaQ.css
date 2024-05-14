@@ -26,12 +26,6 @@
     top: 10vw;
     left: 49.6vw;
   }
-  section.experience div.box span:nth-child(even)::before {
-    /* left: -3.2vw; */
-  }
-  section.experience div.box span:nth-child(odd)::after {
-    /* right: -0.8vw; */
-  }
 }
 @media (max-width: 2241px) and (min-width: 2050px) {
   section.experience .line {
@@ -58,9 +52,9 @@
 }
 @media (max-width: 1441px) and (min-width: 900px) {
   section.experience .line {
-    height: 54vh;
-    top: 13vw;
-    left: 49.4vw;
+    height: 52vh;
+    top: 14vw;
+    left: 49.1vw;
   }
 }
 @media (max-width: 901px) and (min-width: 500px) {
@@ -301,7 +295,7 @@
     width: 80vw;
     height: 45vh;
   }
-  
+
   section.home .title-box {
     width: 80vw;
     height: 75vw;

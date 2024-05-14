@@ -9,8 +9,7 @@
   border: none;
   box-sizing: border-box !important;
 }
-html,
-body {
+html {
   scroll-behavior: smooth !important;
 }
 
@@ -391,11 +390,10 @@ section.experience div.box span:nth-child(odd)::after {
 }
 section.experience .line {
   position: absolute;
-  height: 45vh;
   width: 0.2vw;
   background-color: var(--first-color);
   z-index: -5;
-  left: 48.9vw;
+  left: 4vw;
   top: 12.8vw;
 }
 /* Touch */
