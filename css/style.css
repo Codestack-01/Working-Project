@@ -19,7 +19,6 @@ body {
 header.desktop-menu,
 header.mobile-menu {
   transition: all 0.4s;
-  width: 100%;
   height: 8vh;
   background-color: var(--White);
   display: flex;
@@ -127,13 +126,11 @@ header.mobile-menu nav ul li a:hover {
 }
 /* Home */
 section.home {
-  width: 90;
   height: 70vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0 4vw;
 }
 section.home .title-box {
   width: 41vw;
@@ -157,36 +154,6 @@ section.home p {
   color: var(--text-color);
   font-size: var(--pra-size);
 }
-section.home button {
-  background-color: var(--first-color);
-  color: #fff;
-  width: 13vw;
-  height: 8vh;
-  font-size: var(--pra-size);
-  letter-spacing: 0.06vw;
-  cursor: pointer;
-  border-radius: 0.5vw;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -webkit-border-radius: 0.5vw;
-  -moz-border-radius: 0.5vw;
-  -ms-border-radius: 0.5vw;
-  -o-border-radius: 0.5vw;
-}
-section.home button:hover {
-  background-color: var(--first-color-alt);
-}
-section.home button:active {
-  transform: scale(0.99);
-  -webkit-transform: scale(0.99);
-  -moz-transform: scale(0.99);
-  -ms-transform: scale(0.99);
-  -o-transform: scale(0.99);
-}
-
 section.home .img-box {
   width: 30vw;
   height: 54vh;
@@ -208,13 +175,11 @@ section.home .img-box img {
 }
 /* =====>>Services<<======= */
 section.services {
-  width: 92vw;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1vw 2vw;
 }
 section.services .title {
   width: 100%;
@@ -285,13 +250,11 @@ section.services div.box a i {
 }
 /*===========>>>> Why css<============ */
 section.why {
-  width: 98vw;
   height: 50vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 2vw;
   position: relative;
 }
 section.why div.image {
@@ -312,12 +275,15 @@ section.why div.image img {
 }
 section.why div.Box {
   width: 40vw;
-  height: 32vh;
+  height: 38vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
+}
+button.Btn {
+  margin-top: 1.5vh;
 }
 section.why div.Box h4 {
   font-size: var(--text-size);
@@ -335,14 +301,14 @@ section.why div.Box p {
   font-size: var(--pra-size);
   color: var(--text-color);
 }
-section.why div.Box a {
+/* section.why div.Box a {
   background-color: var(--first-color);
   color: #fff;
   width: 10vw;
   height: 6vh;
   border-radius: 0.5vw;
-  /*padding: 1vw 1vw;
-  */
+  padding: 1vw 1vw;
+
   font-size: var(--text-size);
   text-decoration: none;
   position: relative;
@@ -355,16 +321,14 @@ section.why div.Box a {
   -moz-border-radius: 0.5vw;
   -ms-border-radius: 0.5vw;
   -o-border-radius: 0.5vw;
-}
+} */
 /* Eepericence */
 section.experience {
-  width: 98vw;
   height: 90vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 2vw;
   position: relative;
 }
 section.experience h1 {
@@ -384,7 +348,7 @@ section.experience div.box {
   position: relative;
 }
 section.experience div.box span {
-  width: 15vw;
+  width: 20vw;
   position: relative;
   display: inline-block;
   color: var(--text-color);
@@ -404,8 +368,8 @@ section.experience div.box span:nth-child(even)::before {
   background-color: var(--first-color);
   padding: 0.5vw;
   position: absolute;
-  top: 1.1vw;
-  left: -4.7vw;
+  top: 1.3vw;
+  left: -2.4vw;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -418,7 +382,7 @@ section.experience div.box span:nth-child(odd)::after {
   background-color: var(--first-color);
   position: absolute;
   top: 1.3vw;
-  right: -4.3vw;
+  right: -1.6vw;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -426,7 +390,7 @@ section.experience div.box span:nth-child(odd)::after {
 }
 section.experience .line {
   position: absolute;
-  height: 59vh;
+  height: 56vh;
   width: 0.2vw;
   background-color: var(--first-color);
   z-index: -5;
@@ -435,7 +399,6 @@ section.experience .line {
 }
 /* Touch */
 section.touch {
-  width: 98vw;
   height: 80vh;
   display: flex;
   justify-content: space-evenly;
@@ -444,7 +407,7 @@ section.touch {
 section.touch div.Form form {
   border-radius: 2vw;
   width: 45vw;
-  height: 65vh;
+  height: 80vh;
   padding: 2vw;
   /* background-color: var(--SkyBlue); */
   display: flex;
@@ -494,7 +457,7 @@ section.touch div.Form textarea {
 }
 section.touch div.Form input {
   width: 30vw;
-  height: 4vh;
+  height: 5vh;
   padding: 0.5vw;
   padding-left: 1vw;
   font-size: 1.3vw;
@@ -509,10 +472,11 @@ section.touch div.Form input {
 section.touch div.contact_box {
   border-radius: 2vw;
   width: 35vw;
-  height: 65vh;
+  height: 75vh;
   padding: 2vw;
   position: relative;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   -webkit-border-radius: 2vw;
   -moz-border-radius: 2vw;
   -ms-border-radius: 2vw;
@@ -526,6 +490,9 @@ section.touch div.contact_box h1 {
 section.touch div.contact_box h1 span {
   font-size: var(--text-size);
   color: var(--text-color);
+  position: relative;
+  bottom: 0.5vw;
+  margin-bottom: 0.2vw;
 }
 section.touch div.contact_box .contact_container {
   height: 47vh;
@@ -573,7 +540,7 @@ section.touch div.contact_box .contact_container .contact_info a span {
   font-size: var(--pra-size);
   color: var(--text-color);
 }
-section.touch div.Form button.SubmitBtb {
+/* section.touch div.Form button.SubmitBtb {
   padding: 1.5vw 3vw;
   border-radius: 0.7vw;
   background-color: var(--first-color);
@@ -584,13 +551,13 @@ section.touch div.Form button.SubmitBtb {
   -moz-border-radius: 0.7vw;
   -ms-border-radius: 0.7vw;
   -o-border-radius: 0.7vw;
-}
-section.touch div.Form button.SubmitBtb:hover {
+} */
+/* section.touch div.Form button.SubmitBtb:hover {
   background-color: var(--first-color-alt);
-}
+} */
 /* Footer */
 footer {
-  width: 98.55vw;
+  padding: 0;
   height: 25vw;
   display: flex;
   flex-direction: column;
@@ -604,7 +571,7 @@ footer article.top-box {
 }
 footer article.top-box ul li {
   list-style-type: none;
-  padding: 0.8vw 1vw;
+  padding: 0.4vw 1vw;
   text-align: center;
 }
 footer article.top-box ul li a {
@@ -615,7 +582,7 @@ footer article.top-box ul li a {
 footer article.top-box ul li.Hadding {
   position: relative;
   top: -0.7vw;
-  font-size: 1.7vw;
+  font-size: var(--title-size);
   color: var(--title-color);
 }
 footer article.top-box div.contect-info {
@@ -625,9 +592,12 @@ footer article.top-box div.contect-info {
   gap: 2vw;
   color: var(--text-color);
   cursor: default;
+  height: 22vh;
+  font-size: var(--text-size);
 }
 footer article.top-box div.contect-info h1 {
   font-weight: 400;
+  font-size: var(--title-size);
   color: var(--title-color);
 }
 footer article.top-box div.contect-info p {
