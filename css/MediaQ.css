@@ -1,4 +1,4 @@
-@media (min-width: 3500px) {
+@media (max-width: 3841px) and (min-width: 3200px) {
   section.experience div.box span:nth-child(odd)::after {
     right: -0.8vw;
   }
@@ -10,10 +10,39 @@
     top: 10.5vw;
   }
 }
-@media (max-width: 2000px) {
+@media (max-width: 3201px) and (min-width: 2560px) {
+  section.home .img-box img {
+    width: 92%;
+  }
+  section.experience .line {
+    height: 61vh;
+    left: 49.2vw;
+    top: 9.8vw;
+  }
+}
+@media (max-width: 2561px) and (min-width: 2240px) {
+  section.experience .line {
+    height: 60vh;
+    top: 10vw;
+    left: 49.6vw;
+  }
+  section.experience div.box span:nth-child(even)::before {
+    /* left: -3.2vw; */
+  }
+  section.experience div.box span:nth-child(odd)::after {
+    /* right: -0.8vw; */
+  }
+}
+@media (max-width: 2241px) and (min-width: 2050px) {
+  section.experience .line {
+    left: 50vw;
+  }
+}
+@media (max-width: 2049px) and (min-width: 1920px) {
   section.experience .line {
     height: 61vh;
     top: 18vh;
+    left: 49vw;
   }
   section.experience div.box span:nth-child(odd)::after {
     right: -1vw;
@@ -22,14 +51,19 @@
     left: -3vw;
   }
 }
-@media (max-width: 1500px) {
+@media (max-width: 1921px) and (min-width: 1441px) {
   section.experience .line {
-    height: 53vh;
-    top: 14vw;
-    left: 48.65vw;
+    left: 49.4vw;
   }
 }
-@media only screen and (max-width: 900px) {
+@media (max-width: 1441px) and (min-width: 900px) {
+  section.experience .line {
+    height: 54vh;
+    top: 13vw;
+    left: 49.4vw;
+  }
+}
+@media (max-width: 901px) and (min-width: 500px) {
   :root {
     --title-size: 9vw;
     --text-size: 4vw;
@@ -68,7 +102,7 @@
   header.mobile-menu nav ul li a {
     font-size: 3.5vw;
   }
-  /* home */
+  /* home  */
   section.home {
     height: 80vh;
   }
@@ -96,6 +130,7 @@
   }
   /* Services */
   section.services {
+    height: 80vh;
     flex-wrap: wrap;
   }
   section.services .title .Hadding {
@@ -126,7 +161,7 @@
   section.services div.box a {
     font-size: 2.8vw;
   }
-  /* WHy */
+  /* WHy  */
   section.why {
     height: 85vh;
   }
@@ -163,7 +198,6 @@
   }
   section.experience .line {
     height: 31vh;
-    width: 0.4vw;
     top: 31vw;
   }
   section.experience div.box span {
@@ -187,7 +221,7 @@
   /* Touch */
   section.touch {
     flex-wrap: wrap-reverse;
-    height: 140vh;
+    height: 140vh !important;
   }
   section.touch div.contact_box {
     display: flex;
@@ -231,7 +265,7 @@
     color: var(--text-color);
   }
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
   :root {
     --title-size: 7vw;
     --text-size: 3.5vw;
@@ -257,7 +291,7 @@
     letter-spacing: 0.1vw;
     font-size: var(--pra-size);
   }
-  /* Home */
+  /* Home  */
   section.home {
     flex-wrap: wrap;
     padding: 0;
@@ -267,6 +301,7 @@
     width: 80vw;
     height: 45vh;
   }
+  
   section.home .title-box {
     width: 80vw;
     height: 75vw;
@@ -282,7 +317,10 @@
   section.home p {
     font-size: var(--pra-size);
   }
-  /* Services */
+  /* Services  */
+  section.services {
+    height: 170vh;
+  }
   section.services .title {
     width: 100%;
     height: 12vw;
@@ -320,7 +358,7 @@
   section.services div.box h2 {
     font-size: var(--text-size);
   }
-  /* WHy */
+  /* WHy  */
   section.why {
     width: 98vw;
     height: 70vh;
@@ -475,7 +513,7 @@
     width: 38vw;
     height: 17vh;
     left: -6vw;
-    /* bottom: 3.7vw; */
+    bottom: 3.7vw;
   }
   footer article.top-box div.contect-info h1 {
     font-size: var(--text-size);
@@ -494,27 +532,4 @@
     padding: 1vw 5vw;
     font-size: 2.5vw;
   }
-}
-@media only screen and (max-height: 600px) {
-  section.home .img-box img {
-    width: 88%;
-  }
-  section.why div.image img {
-    width: 90%;
-  }
-
-  section.experience .line {
-    position: absolute;
-    height: 66vh;
-    width: 0.2vw;
-    background-color: var(--first-color);
-    z-index: -5;
-    left: 49.2vw;
-    top: 10vw;
-  }
-}
-header,
-footer,
-section {
-  outline: 2px solid;
 }
