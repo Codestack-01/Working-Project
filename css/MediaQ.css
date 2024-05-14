@@ -506,3 +506,8 @@
     top: 10vw;
   }
 }
+header,
+footer,
+section {
+  outline: 2px solid;
+}
