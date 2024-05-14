@@ -390,11 +390,11 @@ section.experience div.box span:nth-child(odd)::after {
 }
 section.experience .line {
   position: absolute;
-  height: 56vh;
+  height: 45vh;
   width: 0.2vw;
   background-color: var(--first-color);
   z-index: -5;
-  left: 49.2vw;
+  left: 48.9vw;
   top: 12.8vw;
 }
 /* Touch */
